@@ -1,4 +1,4 @@
-# Biostat821-Projects
+# Biostat821-ehr_analysis_cont_Zhang
 
 A Python module that provides some simple analytical capabilities on some (synthetic) EHR data.
 Example data are provided as:
