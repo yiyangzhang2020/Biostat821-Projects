@@ -20,10 +20,10 @@ System will ask user to enter a lab name and a comparison symbol(< or >) for the
 >> patients = load_patients("PatientCorePopulatedTable.txt")
 >> num_older_than(patients, 51.2)
 52
-
 >> labs = labs_patients("PatientCorePopulatedTable.txt")
 >> sick_patients(labs, 'METABOLIC: ALBUMIN', '>', 5.8)
 '1A8791E3-A61C-455A-8DEE-763EB90C9B2C', '1', 'METABOLIC: ALBUMIN', '5.9', 'pg', '1992-06-30 03:50:11.777'
+
 
 *testing instructions
 test_ehr_analysis.py is a suite of tests using the 'pytest' framework for all four functions in ehr_analysis.py.
