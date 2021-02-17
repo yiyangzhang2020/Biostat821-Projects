@@ -32,5 +32,7 @@ System will ask user to enter a lab name and a comparison symbol(< or >) for the
 *Testing instructions
 
 test_ehr_analysis.py is a suite of tests using the 'pytest' framework for all four functions in ehr_analysis.py.
+
 Testing functions include testing length of output and sample output, and values of output and sample output.
+
 All 4 tests should pass, any change of sample output should result in a failed test. 
