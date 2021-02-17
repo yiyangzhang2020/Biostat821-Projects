@@ -31,3 +31,10 @@ def test_load_labs():
     ''' 
     assert ['1A8791E3-A61C-455A-8DEE-763EB90C9B2C', '1', 'CBC: MCH', '35.8', 'pg', '1992-06-30 03:50:11.777'] in ehr_analysis.labs
     assert len(ehr_analysis.labs)==111484
+
+def test_age_calc():
+    ''' 
+	   A test function that checks whether it returns the age of a given patient
+       We used a sample patient ID from the original dataset to check if it outputs the correct age of the person
+    '''
+    assert ehr_analysis.age_calc(ehr_analysis.patients,'FB2ABB23-C9D0-4D09-8464-49BF0B982F0F')==74
