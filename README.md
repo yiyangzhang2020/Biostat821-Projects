@@ -9,7 +9,8 @@ End user guide:
 * setup/installation instructions, including information about the expected input file formats
 Input data files should be in the format of txt files. 
 
-* API description
+* API description: 
+
 System will ask user to enter a index age for the num_older_than function, input that is not a integar will result in a raise of TypeError. 
 System will ask user to enter a index value for the sick_patients function, input that is not a float will result in a raise of TypeError. 
 System will ask user to enter a lab name and a comparison symbol(< or >) for the sick_patients function, unvalid input will result in a raise of ValueError. 
