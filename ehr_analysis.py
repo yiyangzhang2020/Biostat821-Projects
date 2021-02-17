@@ -18,7 +18,21 @@ def load_labs(labs_file):
 	   ''' 
 	with open(labs_file) as labs_table:
 		return [line.replace('\n','').split('\t') for line in labs_table]
-
+	
+def age_calc(patients, patient_id):
+       ''' 
+	   A function that computes the age at first admission of any given patient
+	   @param patients: representing original input data of patients
+        patient_id: representing the given patient
+	   @return: the age of the given patient
+	   ''' 
+    	now = datetime.now()
+	for row in patients:
+		birth_date = datetime.strptime(row[2], '%Y-%m-%d %H:%M:%S.%f')
+		if row[0] == patient_id:
+			return round((now - birth_date).days / 365, 1)
+			break
+	
 def num_older_than(patient,age):
     	''' 
 	   A function that reads in patients data and an index age
@@ -76,9 +90,5 @@ except:
 
 
 print(sick_patients(labs, what_lab, compare, index_value))
-
-
 print(len(sick_patients(labs, 'METABOLIC: ALBUMIN', '>', 5.9)))
-print(labs[3])
-print(len(patients))
-print(len(labs))
+
