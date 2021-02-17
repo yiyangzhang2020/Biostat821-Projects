@@ -16,7 +16,7 @@ System will ask user to enter a index value for the sick_patients function, inpu
 System will ask user to enter a lab name and a comparison symbol(< or >) for the sick_patients function, unvalid input will result in a raise of ValueError. 
 
 
-* examples
+* Examples
 ```python
 >> patients = load_patients("PatientCorePopulatedTable.txt")
 >> num_older_than(patients, 51.2)
@@ -24,9 +24,10 @@ System will ask user to enter a lab name and a comparison symbol(< or >) for the
 >> labs = labs_patients("PatientCorePopulatedTable.txt")
 >> sick_patients(labs, 'METABOLIC: ALBUMIN', '>', 5.8)
 '1A8791E3-A61C-455A-8DEE-763EB90C9B2C', '1', 'METABOLIC: ALBUMIN', '5.9', 'pg', '1992-06-30 03:50:11.777'
+```
 
+*Testing instructions
 
-*testing instructions
 test_ehr_analysis.py is a suite of tests using the 'pytest' framework for all four functions in ehr_analysis.py.
 Testing functions include testing length of output and sample output, and values of output and sample output.
 All 4 tests should pass, any change of sample output should result in a failed test. 
