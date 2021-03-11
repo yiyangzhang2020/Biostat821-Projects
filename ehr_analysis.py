@@ -2,6 +2,7 @@ from datetime import datetime
 ''' Import datetime library for later use in the num_older_than function 
     to convert the date format into datetime 
 '''
+
 def load_patients(patients_file):
        ''' 
 	   A function that reads in original patients data and turn it into a new data table
