@@ -68,7 +68,7 @@ class Patient():
 
 class Observation():
     global labs
-    labs = load_labs('/Users/MineMine/Desktop/X0029/LabsCorePopulatedTable.txt')
+    labs = load_labs('/Users/yiyangzhang/Desktop/Biostat821/ehr_analysis/LabsCorePopulatedTable.txt')
     def __init__(self, patientID, labname, labdatetime):
         for row in labs:
             if patientID == row[0] and labname == row[2] and labdatetime == datetime.strptime(row[5], '%Y-%m-%d %H:%M:%S.%f'):
